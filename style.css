@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.form-group {
+  margin: 20px;
+  padding-left: 3%;
+  position: fixed;
+  right: 1;
+}
+
+.search-bar {
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+}
+
+input[type="text"] {
+  width: 300px;
+}
+
+.main-weather-display {
+  position: absolute;
+  top: 30%;
+  width: 90%;
+  margin-left: 5%;
+  color: #f3f3f3;
+}
+
+.condition {
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+  padding-left: 0.3rem;
+}
+
+.location {
+  font-size: 4rem;
+  line-height: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+
+.degrees {
+  font-size: 15rem;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+}
+
+.degrees::after {
+  content: "\00B0 C";
+  font-size: 3rem;
+  position: absolute;
+  top: 1.8rem;
+  left: 19rem;
+}
+
+.error {
+  display: none;
+  padding: 10px;
+  margin: 4px;
+  color: #f3f3f3;
+}
